@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <head> 
+        <title>RemoveProduct</title>
+    </head>
+    <body>
+        <div id="site4">
+            <ul>
+                <li text-align: center;"><button class="menuButtons"><a href="test.html"> HOME </a></button></li>
+                <li text-align: center;"><button class="menuButtons"><a href="productUpdate.html"> Ενημέρωση προϊόντων κατά τον ανεφοδιασμό </a></button></li>
+                <li text-align: center;"><button class="menuButtons"><a href="productRemoval.html"> Σύστημα ενημέρωσης απομάκρυνσης προϊόντων που πλησιάζουν στη λήξη!</a> </button></li>
+                <li text-align: center;"><button class="menuButtons"><a href="smallQuantity.html"> Ορισμός κ’ εμφάνιση μικρής ποσότητας </a></button></li>
+                <li text-align: center;"><button class="menuButtons"><a href="orderHistory.html"> Ενημέρωση προϊόντων εισαχθέντων και εξαχθέντων.</a></button></li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="titleHeadings">Σύστημα Απομάκρυνσης που πρόκειται να λήξουν</h1>
+            <button class="collapsible">Tommorow</button>
+            <div class="content">
+                <p> Product 1 <br> Product 2</p>
+            </div>
+            <button class="collapsible">In 2 days</button>
+            <div class="content">
+                <p> Product 1 <br> Product 2</p>
+            </div>
+            <button class="collapsible">In 3 days</button>
+            <div class="content">
+                <p> Product 1 <br> Product 2</p>
+            </div>    
+        </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+        </script>
+    </body>
+</html>

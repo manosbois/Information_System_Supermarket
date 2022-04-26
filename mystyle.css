@@ -1,0 +1,46 @@
+ul {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    height: 50px;
+}
+
+li {
+    text-align: center;
+    display: inline;
+    text-decoration: none;
+}
+.menuButtons {
+    background-color:rgba(35, 190, 190, 0.596);
+    text-align: left;
+    height: 50px;
+    font-weight: bold;
+}
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.collapsible:hover {
+    background-color: #555;
+  }
+.content {
+    color: black;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+a {
+    text-decoration: none;
+    color: black;
+}
