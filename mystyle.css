@@ -1,46 +1,98 @@
-ul {
-    text-align: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    height: 50px;
+.columns-with-sortarrows input{
+    width: 10px;
 }
 
-li {
+#homebutton{
+    margin-top: -6px;
+}
+
+#searchProduct {
+    width:294px;
+}
+
+/*
+.table>thead>tr>th {
+    vertical-align: middle;
+}
+*/
+
+.headings {
+    text-align:center;
+}
+
+.imgLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+    
+}
+
+img{
+    border-radius: 50%;
+}
+
+#logo-background {
+    padding: 25px;
+    background: rgb(130, 209, 219);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-bottom:2px solid black; 
+}
+
+#logo-description {
+    text-align:center;
+    font-size:x-large;
+}
+
+
+.menuButtons{
+    background-color: rgb(130, 209, 219); 
+    padding-top: 11px;
+    padding-bottom: 11px;
+    
+}
+
+.category{
+    color:black;
+}
+
+#category-choose {
+    margin-bottom: 25px ;
+    margin-top: 25px ;
+}
+
+.category-description{
+    color: darkslategrey;
+    width: 250px;
+    height: 75px
+}
+
+.category-icons svg {
+    color: whitesmoke;
+    width:175px; 
+    height:175px; 
+    fill:currentColor;
+}
+
+#nav {
     text-align: center;
-    display: inline;
-    text-decoration: none;
 }
-.menuButtons {
-    background-color:rgba(35, 190, 190, 0.596);
-    text-align: left;
-    height: 50px;
-    font-weight: bold;
+
+#initialList {
+    list-style: none;
+    display: inline-block;
 }
-.collapsible {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
+
+.buttonList {
+    float: left;
+    margin: 0 20px;
 }
-.collapsible:hover {
-    background-color: #555;
-  }
-.content {
-    color: black;
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
-  }
-a {
-    text-decoration: none;
-    color: black;
+
+.tablething input{
+    width: 30px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+
